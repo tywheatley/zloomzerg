@@ -7,6 +7,9 @@ body{
 
 #content_window{
 	width: 80%;
+	position:absolute;
+	top:25%;
+	left:15%;
 
 }
 
@@ -67,4 +70,32 @@ body{
 
 #top_nav{
 
+}
+
+.stock{
+	font-family: Monaco;
+	height: 100px;
+	position: relative;
+	border:solid 1px gray;
+	margin-bottom:15px;
+}
+
+.name{
+
+}
+
+.symbol{
+	background-color:blue;
+	padding:3px;
+}
+
+#top_nav_bar{
+	display:inline;
+	padding-right: 20px;
+	list-style-type: none;
+	float:left;
+}
+
+#top_nav_bar > li{
+	display:inline;
 }
