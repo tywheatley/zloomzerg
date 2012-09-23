@@ -1,0 +1,21 @@
+next steps
+
+-stop using text file, instead use django
+-will need templates
+
+-change stock items to be 'closed', only display limited information
+-onclick, expand, show additional details
+
+/Users/tyler/Dropbox/wavii/event/event/event/console/templates/smooth/index.html:
+  236                });
+  237  
+  238:               $(document).on('click', '.article_snippet', function() {
+  239                    $($(this).attr('href')).toggle();
+  240                    retu
+
+-different portfolios
+-should be doable after integrating django
+
+-charts / pychart , there was a python chart library...
+
+-ruby somehow?

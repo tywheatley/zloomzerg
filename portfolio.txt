@@ -1,0 +1,15 @@
+﻿Name,Symbol,Last price,Change
+Lenovo Group Limited (ADR),LNVGY,15.18,0.29
+Nucor Corporation,NUE,37.79,0.09
+Clearwater Paper Corp,CLW,35.07,0.21
+Boardwalk Pipeline Partners LP,BWP,27.77,-0.15
+Microsoft Corporation,MSFT,29.30,-0.44
+The Bank of New York Mellon Corporation,BK,21.31,-0.02
+Noble Energy Inc.,NBL,84.87,1.81
+ASB Financial Corp. (OH),ASBN,12.10,0.00
+First Place Financial Corp.,FPFC,0.65,-0.02
+Citigroup Inc.,C,25.87,-0.01
+Marvell Technology Group Ltd.,MRVL,10.52,-0.13
+Great Plains Energy Incorporated,GXP,21.78,0.11
+Yandex NV,YNDX,18.41,0.06
+Glencore International Plc,GLEN,316.90,6.35

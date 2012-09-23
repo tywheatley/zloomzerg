@@ -1,0 +1,85 @@
+body{
+	/*background-color: #DAF8FF;*/
+	background-color: orange;
+
+
+}
+
+#content_window{
+	width: 80%;
+	position:absolute;
+	top:15%;
+	left:15%;
+
+}
+
+.ticker_symbol{
+	color: white;
+	background-color: blue;
+	/*width: 3.4em; */
+	font-size: .8em;
+	padding: 5px;
+	margin-right: 10px;
+	text-align: center;
+	vertical-align: center;
+	height :3em;
+	line-height: 3em;
+	max-width: 3.4em;
+	display: inline;
+}
+
+.stock_name{
+	border: solid 2px black;
+	display: inline;
+	/*max-width: 30%;*/
+}
+
+.portfolio_option{
+	height: 85px;
+	background-color: #33C133;
+	font-family: Verdana;
+	margin: 2em;
+
+}
+
+#top_banner {
+	background-color: black;
+	color: white;
+	font-size: 75px;
+	width: 35%;
+	height: 1.2em;
+}
+
+#top_nav{
+
+}
+
+.stock{
+	font-family: Monaco;
+	height: 100px;
+	position: relative;
+	border:solid 1px gray;
+	margin-bottom:15px;
+	background-color: #BFE3FE;
+}
+
+.name{
+
+}
+
+.symbol{
+	background-color:blue;
+	padding:3px;
+}
+
+#top_nav_bar{
+	display:inline;
+	padding-right: 20px;
+	list-style-type: none;
+	float:left;
+}
+
+#top_nav_bar > li{
+	display:inline;
+	border-bottom:1px solid black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8" />  
+    <title>Zloomzerg</title>  
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" />  
+    <link href="gf.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="gf.js"></script>
+</head>  
+<body>  
+    <div class="navbar">  
+        <div class="navbar-inner">  
+            <div class="container">  
+                <ul class="nav">  
+                    <a class="brand" href="#">ZLOOMZERG</a>  
+                    <li class="active"><a href="#">Home</a></li>  
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown" id="accountmenu">  
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolios<b class="caret"></b></a>  
+                        <ul class="dropdown-menu">
+                            <li class='portfolio'><a href="#">Regular</a></li>
+                            <li class='portfolio'><a href="#">Financials</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Energy</a></li>
+                            <li><a href="#">Health Care</a></li>
+                        </ul>  
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </div>  
+    <div class="container-fluid">  
+    </div>  
+    <div id="content_window">
+    </div>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>  
+    <script type="text/javascript" src="bootstrap.min.js"></script>  
+    <script type="text/javascript">  
+        $(document).ready(function () {  
+            $('.dropdown-toggle').dropdown();  
+
+        });  
+   </script>
+   <script type="text/javascript">
+   		$('.portfolio').on("click", function(event){
+   			//alert($(this).text());
+   			print_stocks($(this).text());
+   		});
+   </script>  
+</body>  
+</html>  
