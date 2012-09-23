@@ -1,24 +1,33 @@
 <!DOCTYPE html>
  <html lang="en">
  <head>
-  <LINK REL=StyleSheet HREF="gf.css" TYPE="text/css" >
-   <meta charset="utf-8">
-   <title>Zloomzerg Financial</title>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-      <script type="text/javascript" src="zloomzerg.js"></script>
- </head>
- <body>
-  <!-- <a href="http://jquery.com/">jQuery</a> -->
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
-   <div id="top_banner">
-    Zloomzerg
-   </div>
-   <div id="top_nav_box">
-    <ul id="top_nav_bar">
-      <li>About</li>
-      <li>Market Data</li>
-      <li>Portfolio</li>
+    <LINK REL="StyleSheet" HREF="gf.css" TYPE="text/css">
+    <LINK REL="StyleSheet" HREF="bootstrap.css" TYPE="text/css">
+     <meta charset="utf-8">
+     <title>Zloomzerg Financial</title>
+        <!-- <script src="./jquery.js"></script> -- >
+        <script type="text/javascript" src="zloomzerg.js"></script>
+   </head>
+   <body>
+    <!-- <a href="http://jquery.com/">jQuery</a> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
+     <div id="top_banner">
+      Zloomzerg
+     </div>
+     <div id="top_nav_box">
+      <ul id="top_nav_bar">
+        <li>About</li>
+        <li>Market Data</li>
+      <li class="dropdown" id="portfolio_menu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" 8>Portfolios</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Regular</a></li>
+          <li><a href="#">Financials</a></li>
+        </ul>        
+      </li>
+    <li><a href="http://127.0.0.1:8000/admin/portfolios/stock/">Stocks</a></li>
     </ul>
+   </div>
    </div>
    <div id="content_window"></div>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
@@ -26,7 +35,14 @@
     alert("Data Loaded: " + data);
 });
    </script>
-
+   <!--
+  <script type="text/javascript">  
+        $(document).ready(function () {  
+            $('.dropdown-toggle').dropdown();  
+        });  
+   </script>   -->
+   <script src="jquery.1.7.2.js"></script>
+    <script src="bootstrap.js"></script>
    <div id="right_pane"></div>
  </body>
  </html>

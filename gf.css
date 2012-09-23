@@ -8,7 +8,7 @@ body{
 #content_window{
 	width: 80%;
 	position:absolute;
-	top:25%;
+	top:15%;
 	left:15%;
 
 }
@@ -34,7 +34,7 @@ body{
 	/*max-width: 30%;*/
 }
 
-.portfolio_entry{
+.portfolio_option{
 	height: 85px;
 	background-color: #33C133;
 	font-family: Verdana;
@@ -42,30 +42,12 @@ body{
 
 }
 
-.s1 {
-	position: relative;
-	top: .5em;
-	left: .5em;
-	width:50%;
-}
-
-.s2 {
-	/*float: right;*/
-	position:relative;
-	float:right;
-	padding-right: 5px;
-
-}
-
-.s3 {
-
-}
-
 #top_banner {
 	background-color: black;
 	color: white;
-	font-size: 50px;
+	font-size: 75px;
 	width: 35%;
+	height: 1.2em;
 }
 
 #top_nav{
@@ -78,6 +60,7 @@ body{
 	position: relative;
 	border:solid 1px gray;
 	margin-bottom:15px;
+	background-color: #BFE3FE;
 }
 
 .name{
@@ -98,4 +81,5 @@ body{
 
 #top_nav_bar > li{
 	display:inline;
+	border-bottom:1px solid black;
 }

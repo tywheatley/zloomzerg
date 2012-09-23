@@ -1,60 +1,28 @@
-console.log("Javascript Runs");
-alert("js");  
+function print_stocks(input){
+	//alert("print stocks");
+	//alert(input);
+	//alert(input.toString());
+	$.get('portfolio.txt', function(data) {
+	split_data = data.split("\n");
+	printPortfolio(split_data);
 
-google.load("gdata", "1.x");
-
-google.setOnLoadCallback(getMyFinancePortfolioFeed);
-
-
-getMyFinancePortfolioFeed(){
-	
-
-};
-
-function testInput(username,pw){
-	console.log(username + " " + password);
-	console.log("life");
+	}, 'text');
 }
 
-function logMeIn() {
-  alert("Logging In...");
-  scope = "http://finance.google.com/finance/feeds/";
-  var token = google.accounts.user.login(scope);
+function printPortfolio(portfolio){
+//alert("print portfolio");
+//calls printEntry on each entry
+	for(var x in portfolio){
+		printEntry(portfolio[x]);
+	}
 }
 
-function setupMyService() {
-  var myService =
-    new google.gdata.finance.FinanceService('exampleCo-exampleApp-1');
-  logMeIn();
-  return myService;
+function printEntry(entry){
+//alert("Print Entry called");
+//prints individual stock entries
+	var pieces = entry.split(",");
+	$('#content_window').append($('<div class="stock"><span class="name">' +pieces[0]+' </span><span class="symbol">' + pieces[1] + '</span></div>')).addClass('stock');
+	//alert(pieces[0]);
+	//for(var y in pieces){
+		//alert(pieces[y]);
 }
-
-// Google Finance Portfolio Data API Example: Retrieve Portfolio
-
-var financeService =
-  new google.gdata.finance.FinanceService('GoogleInc-financejsguide-1.0');
-
-var portfolioID = 1;
-var portfolioEntryUri = 
-  'https://finance.google.com/finance/feeds/default/portfolios/' + portfolioID;
-
-// This callback will run when the portfolio query is complete
-var portfolioEntryCallback = function(result) {
-  PRINT('Portfolio with ID ' + portfolioID + ' has title "' +
-        result.entry.getTitle().getText() + '" and currency code "' +
-        result.entry.getPortfolioData().getCurrencyCode() + '"');
-};
-
-// FinanceService methods may be supplied with an alternate callback for errors
-var handleErrorCallback = function(error) {
-  PRINT(error);
-};
-
-PRINT('Retrieving a specific user portfolio entry...');
-financeService.getPortfolioEntry(portfolioEntryUri,
-                                 portfolioEntryCallback,
-                                 handleErrorCallback);
-
-testInput();
-logMeIn();
-setupMyService();
