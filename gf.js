@@ -33,9 +33,9 @@ function printEntry(entry){
 	//alert(pieces[0]);
 	//for(var y in pieces){
 		//alert(pieces[y]);
-	$('#accordion3').append($('<div class="accordion-group" id="group2">\
-							   		<div class="accordion-heading">\
-							   			<a class="accordion-toggle" data-toggle="collapse" data-parent="#group2" href="#'+pieces[1]+'">'+pieces[0]+'</a></div>\
-							   			<div id="#'+pieces[1]+'" class="accordion-body collapse">\
-							   			<div class="accordion-inner">Lorem ipsum div </dolor></div></div> '));
+	$('#accordion3').append($('<div class="accordion-group"> \
+							   		<div class="accordion-heading"> \
+							   			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#'+pieces[1]+'">'+pieces[0]+'</a></div> \
+							   			<div id="'+pieces[1]+'" class="accordion-body collapse"> \
+							   			<div class="accordion-inner">' + pieces +'</div></div> '));
 }
