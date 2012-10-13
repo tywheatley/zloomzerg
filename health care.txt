@@ -1,0 +1,5 @@
+Name,Symbol,Last price,Change
+Fresenius Medical Care AG & Co. (ADR),FMS,73.40,-0.33,
+Abbott Laboratories,ABT,68.56,-0.76,
+General Dynamics Corporation,GD,66.12,-0.34,
+PSS World Medical Inc.,PSSI,22.78,-0.27,

@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8" />  
+    <title>Zloomzerg</title>  
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" />  
+    <link href="gf.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./dygraphs/dygraph-combined.js"></script>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>  
+
+
+</head>  
+<body>  
+    Hello, World
+
+    <div id="graphdiv"></div>
+    <div id="stock_div"></div>
+
+<script type="text/javascript">
+g = new Dygraph(
+
+    // containing div
+    document.getElementById("chart"),
+
+    // CSV or path to a CSV file.
+    "Date,Temperature\n" +
+    "2008-05-07,75\n" +
+    "2008-05-08,70\n" +
+    "2008-05-09,80\n"
+
+  );</script>
+
+<script type="text/javascript">
+ $(document).ready(function () {
+      var prices = 'prices_jpm_short.csv';
+      var g = new Dygraph(document.getElementById("stock_div"), 
+        "25.30;28.22;31.40",
+        "31.90;34.60;35.50",
+          {
+            customBars: true,
+            logscale: true
+          });
+  
+     /* var linear = document.getElementById("linear");
+      var log = document.getElementById("log");*/
+      //linear.onclick = function() { setLog(false); }
+      //log.onclick = function() { setLog(true); }
+      var setLog = function(val) {
+        g.updateOptions({ logscale: val });
+        linear.disabled = !val;
+        log.disabled = val;
+      }
+    }
+);
+</script>
+
+</body>  
+</html>  
