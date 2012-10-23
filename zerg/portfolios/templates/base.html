@@ -2,10 +2,10 @@
 <html>  
 <head>  
     <meta charset="utf-8" />  
-    <title>Zloomzerg</title>  
-    <link href="bootstrap.css" rel="stylesheet" type="text/css" />  
-    <link href="gf.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="gf.js"></script>
+    <title>{% block title %}ZLOOMZERG{% endblock %}</title>
+    <link href="static/bootstrap.css" rel="stylesheet" type="text/css" />  
+    <link href="zloomzerg/gf.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="zloomzerg/gf.js"></script>
 </head>  
 <body>  
     <div class="navbar">  
@@ -33,8 +33,11 @@
     </div>
 
     <div id="content_window" class="container-fluid">
+    	{% block content %}
         <div class="accordion" id="accordion3">
+        <p>This is base content.</p>
         </div>
+    	{% end block %}
     </div>
     <div id="graphdiv3" style="width:500px; height:300px;"></div>
     <script type="text/javascript" src="jquery-1.7.2.js"></script>  

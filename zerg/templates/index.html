@@ -1,13 +1,11 @@
- <html> 
-<head>
-	<title>ZERG index</title>
-</head>
-<body>
-<p>This is an index for the Zerg project.</p>
-</body>
-</html>
+{% extends "base.html" %}
 
-<!-- -*- mode: django-html -*- 
+{% block content %}
+This is override index content.
+{% end block %}
+
+<!-- -*- mode: django-html -*- -->
+<!--
 {% load django_tables2 %}
 {% load humanize %}
 <!DOCTYPE html>
@@ -102,4 +100,3 @@
 </html>
 
 -->
-

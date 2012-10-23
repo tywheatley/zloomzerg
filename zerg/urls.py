@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	url(r'^portfolios/$', 'portfolios.views.index'),
 	url(r'^portfolios/stock_view/(?P<stock_id>\d+)/$','portfolios.views.stock_view'),
+	url(r'^portfolio/(?P<portfolio_id>\d+)/$','portfolios.views.portfolio'),
     # Example:
     # (r'^zerg/', include('zerg.foo.urls')),
 

@@ -69,8 +69,8 @@ function printEntry(entry){
 		//alert(pieces[y]);
 	$('#accordion3').append($('<div class="accordion-group"> \
 							   		<div class="accordion-heading"> \
-							   			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#'+pieces[1]+'">'+pieces[0]+'</a></div> \
+							   			<a class="accordion-toggle stock_name" data-toggle="collapse" data-parent="#accordion3" href="#'+pieces[1]+'">'+pieces[0]+'</a></div> \
 							   			<div id="'+pieces[1]+'" class="accordion-body collapse"> \
-							   			<div class="accordion-inner">' + pieces +'</div><div class="chart"></div> '));
+							   			<div class="accordion-inner stock_contents">' + pieces +'</div><div class="chart"></div> '));
 
 }

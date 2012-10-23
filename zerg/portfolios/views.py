@@ -14,3 +14,6 @@ def all(request):
 
 def stock_view(request, stock_id):
 	return HttpResponse('stock number... %s' % stock_id)
+
+def portfolio(request, portfolio_id):
+	return HttpResponse('portfolio... %s' % portfolio_id)
